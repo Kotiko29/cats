@@ -1,0 +1,318 @@
+.anchors
+  display flex
+  justify-content center
+  margin-top 30px
+  margin-bottom 37px
+  a  
+   margin-right 30px
+   border-bottom 1px dashed #7D5F32;
+   &:last-child
+     margin-right 0
+.expert-review
+  margin-top 50px
+  .expert-review-wrap
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-between
+    div
+      display inline-block
+      width 590px
+      margin-top 30px
+      font-weight 500
+      font-size 16px
+      line-height 22px
+      h3 
+        font-size 20px
+        font-weight 500
+        margin-bottom 15px
+.tariff 
+  margin-top 40px
+  table
+    max-width 100%
+    width 100%
+    margin: 0;
+    padding: 0;
+    margin-top 40px
+    border-collapse collapse   
+    text-align left 
+    th   
+      font-weight: bold;
+      font-size 12px
+      line-height 16px
+      letter-spacing 0.06em
+      text-transform uppercase
+      border-bottom: 3px solid #6A6A6A
+      padding: 10px 8px;
+    td 
+      font-weight: 600;
+      font-size: 14px;
+      // line-height: 30px;
+      padding: 9px 8px;
+      transition: .3s linear;
+.contacts
+  margin-top 70px
+  .contacts-info-list
+    display flex
+    justify-content space-between
+    width 100%
+    height 150px
+    background-color #fff
+    .contacts-info-item
+      display block
+      width 33%
+      padding-left 19px
+      font-weight bold
+      font-size 12px
+      line-height 16px
+      letter-spacing 0.06em
+      text-transform uppercase
+      *
+        margin-top 10px
+        margin-bottom 6px
+        &:last-of-type
+          font-weight 500
+          font-size 16px
+          line-height 22px
+          text-transform none
+    .contacts-info-email
+      padding-top 8px
+.feedback
+  margin-top 60px
+  label 
+    display block
+    margin-bottom 7px
+    margin-left 10px
+  .feedback-form 
+    padding 43px 20px 34px 19px
+    width 100%
+    height 440px
+    font-weight bold
+    font-size 12px
+    line-height 16px
+    letter-spacing 0.06em
+    text-transform uppercase
+    background-color #fff
+    .form-user
+      display flex
+      justify-content space-between
+      margin-bottom 24px
+      .feedback-form-group-item
+        width 32%
+    input 
+      width 100%
+      height 40px
+      border 1px solid #01796F
+    .form-comment
+      display flex
+      justify-content flex-start
+      align-items center
+      .star-rating-wrapper
+        display flex
+        flex-direction column
+        width 200px
+        margin-left 20px
+        font-weight 600
+        font-size 14px
+        line-height 20px
+        text-transform none
+        .star-rating-wrap
+          display flex
+          justify-content space-between
+          .star-rating
+            display inline-flex
+            flex-direction row-reverse
+            justify-content space-between
+            width 92px
+          .star-rating-item
+            font-size 14px
+            color grey
+            cursor pointer
+            transition 0.2s
+
+          .star-rating-item:hover, .star-rating-item:hover ~ .star-rating-item
+            color #01796F
+
+          .star-rating[data-total-value="1"] .star-rating-item:nth-child(n+5),
+          .star-rating[data-total-value="2"] .star-rating-item:nth-child(n+4),
+          .star-rating[data-total-value="3"] .star-rating-item:nth-child(n+3),
+          .star-rating[data-total-value="4"] .star-rating-item:nth-child(n+2),
+          .star-rating[data-total-value="5"] .star-rating-item:nth-child(n+1)
+            color #01796F
+
+      .comment 
+        width 773px
+        height 95px
+        border 1px solid #01796F
+        resize none
+      .comment[placeholder]
+        padding-top 20px
+        padding-left 10px
+        font-weight 500
+        font-size 14px
+        line-height 20px
+  .form-user-reactions
+    display flex
+    justify-content space-between
+    margin-top 30px
+    .assessment
+      width 773px
+      display flex
+      justify-content space-between
+      align-items center
+      .feedback-input-group
+        position relative
+        width 50%
+        &:first-child
+          margin-right 20px
+        .minus 
+          position absolute
+          left 11px
+          bottom 17px
+        .plus
+          position absolute 
+          left 10px
+          top 35px
+        input[placeholder]
+          font-weight 500
+          font-size 14px
+          line-height 20px
+          padding-left 40px   
+    .recommendation
+      display flex
+      justify-content space-between
+      align-items flex-end
+      .radio
+        position relative
+        margin-right 13px
+        .radio-input
+          -webkit-appearance none/* Chrome */
+          -moz-appearance none/* Firefox */
+          appearance none/* убираем стандартные кружочки */
+          position absolute
+          border none 
+          cursor pointer         
+          &:checked
+            & + label
+              &:before
+                border-color #01796F
+              &:after
+                opacity 1
+        label
+          padding-left 25px/* отступ слева */
+          border none
+          cursor pointer 
+          &:before
+            content ""
+            display block /* не в строку */
+            width 24px /* ширина блока */
+            height 24px/* высота блока */
+            border 1px solid #01796F/* рамка */
+            background-color #fff /* цвет фона */
+            border-radius 50%/* получаем круг */
+            position absolute/* расположен точно в родителе */
+            top 0; /* расстояние от верха родителя */
+            left 0;/* расстояние слева от родителя */
+            z-index 1 /* на нижнем слое */
+            transition border .1s linear // плавный переход для border */
+          &:after
+            content ""
+            display block
+            width 14px
+            height 14px
+            background-color #01796F
+            border-radius 50%
+            opacity 0 /* полностью прозрачный */
+            position absolute
+            top 6px
+            left 6px
+            z-index 2/* на верхнем слое */
+            transition opacity .1s linear /* плавный переход для opacity */
+  .feedback-form-btn
+    margin-top 24px
+
+          
+
+
+
+
+  
+
+
+.reviews
+  margin-top 67px
+.review
+    display flex
+    justify-content space-between
+    margin-bottom 5px
+    background-color #fff
+    .review-body
+      display block
+      width 915px
+      padding 30px 20px
+      .review-body-top
+        display flex
+        margin-bottom 17px
+        .review-body-rating 
+          margin-right 34px
+          font-weight 600
+          font-size 30px
+          line-height 24px
+          color #A0803F
+        .review-body-name
+          margin-right 16px
+          font-weight bold
+          font-size 18px
+          line-height 22px
+        .review-body-date, .review-body-site
+          margin-right 20px
+          font-weight 600
+          font-size 14px
+          line-height 20px
+      .review-body-text
+        font-weight 500
+        font-size 16px
+        line-height 22px
+      .review-body-bottom
+        display flex
+        justify-content space-between
+        position relative
+        margin-top 30px
+        font-weight 500
+        font-size 16px
+        line-height 22px
+        .review-body-plus
+          width 372px
+          margin-left 27px
+          img
+            position absolute
+            top 2px
+            left 0
+        .review-body-minus
+          margin-right 34px
+          width 372px
+          img
+            position absolute
+            top 8px
+            right 416px
+
+    .review-rating
+      display block
+      margin-right 84px
+      margin-top 30px
+      font-weight 600
+      font-size 14px
+      line-height 20px
+      .review-rating-rec
+        margin-bottom 17px
+
+
+
+
+
+
+      
+
+
+
+

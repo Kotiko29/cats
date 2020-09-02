@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./static/favicon/site.webmanifest"> -->
+  <title>Webpack Temple</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+
+          <form class="search" action="#">
+            <div class="header-search">
+              <img src="static/search.svg" alt="" class="header-search-icon">
+              <input type="text" class="header-search-field" placeholder="поиск">
+            </div>           
+           </form>
+  
+           <div class="header-logo">
+             <a href="index.html">
+              <span>Logo</span>
+              <img src="">
+             </a>
+           </div>   
+  
+           <div class="header-feedback">
+            <a href="#" class="btn header-feedback-btn">Обратная связь</a>
+           </div>
+        </div>
+        <div class="header-bottom">
+          <div class="header-menu-list">
+            <a class="header-menu-items" href="catalog.html">каталог</a>
+            <a class="header-menu-items" href="rating.html">рейтинг</a>
+            <a class="header-menu-items" href="#">Ещё один рейтинг</a>
+          </div>
+        </div> 
+      </div>      
+    </header>
+
+    <div class="main-content">
+      <div class="container">
+        <h1 class="title">отзывы и обзоры на кошек разных пород</h1>
+        
+        <section class="filter">
+          <form class="filter-form" name="filter-form" method="GET" action="#">
+            <div class="filter-form-group">
+              <label>cтрана</label>
+              <div class="select">
+                <select name="filter-country[]" class="select-item filter-country">
+                  <option value="rus">Россия</option>
+                  <option value="2">Пункт 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter-form-group">
+              <label>заводчик</label>
+              <div class="select">
+                <select name="filter-breeder[]" class="select-item filter-breeder">
+                  <option value="p1">Пункт 1</option>
+                  <option value="p2">Пункт 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter-form-group">
+              <label>окрас</label>
+              <div class="select">
+                <select name="filter-color[]" class="select-item filter-color">
+                  <option value="any">Любой</option>
+                  <option value="2">Пункт 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter-form-group">
+              <label>пол</label>
+              <div class="select">
+                <select name="filter-sex[]" class="select-item filter-sex">
+                  <option value="female">Ж</option>
+                  <option value="male">М</option>
+                </select>
+              </div> 
+            </div>
+            <div class="filter-form-group">
+              <label>порода</label>
+              <div class="select">
+                <select name="filter-species[]" class="select-item filter-species">
+                  <option value="pers">перс</option>
+                  <option value="2">Пункт 2</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <button id="filter-form-send" class="btn filter-form-btn" type="submit" value="ok">ok</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="top">
+          <h2 class="section-top-title">ТОП - 10</h2>
+          <h3 class="top-subtitle">Актуально на 1 августа 2020</h3>
+          <div class="cards">
+            <div class="card">
+              <div class="block block-main">
+                <div class="block_position">
+                    <img src="static/cards/gold-crown.png" alt="crown">
+                    <span>1</span>
+                </div>
+                <div class="block_title">
+                  <img src="static/logo/06_5d37.jpg" alt="">
+                  <a class="btn btn-main" href="post.html">к заводчику</a>
+                </div>
+                <div class="block_info">
+                  <div class="block_info-rating">5.0</div>
+                  <div>
+                    <span class="block_info-country">Россия, с 2010 г.</span>
+                    <span class="block_info-site">pitomnic.com</span>
+                  </div>
+                  <div class="block_info-feedback">Отзывы (40)</div>
+                </div>
+              </div>      
+              <div class="block block-progress">      
+                <div class="block-progress-item">
+                  <div class="block-progress-title">Цена</div>
+                  <div class="progress-bar">
+                    <div class="bar"></div>
+                  </div>
+                </div>      
+                <div class="block-progress-item">
+                  <div class="block-progress-title">родословная</div>
+                  <div class="progress-bar">
+                    <div class="bar"></div>
+                  </div>
+                </div>      
+                <div class="block-progress-item">
+                  <div class="block-progress-title">гарантия</div>
+                  <div class="progress-bar">
+                    <div class="bar"></div>
+                  </div>
+                </div>      
+                <div class="block-progress-item">
+                  <div class="block-progress-title">еще</div>
+                  <div class="progress-bar">
+                    <div class="bar"></div>
+                  </div>
+                </div>      
+              </div>      
+               <div class="block block-specifications">
+                <div class="block-specifications-item">
+                  <span>Бесплатный паспорт</span>
+                  <div id="ansYes">
+                    <img src="static/icons/CheckMark.svg" alt="Да">
+                    Да</div>
+                </div>      
+                <div class="block-specifications-item">
+                  <div class="block-specifications-title">
+                    <span>Бесплатная доставка</span>
+                    <div id="ansNo">
+                      <img src="static/icons/CrossMark.svg" alt="Нет">
+                      Нет</div>
+                  </div>
+                </div>      
+                <div class="block-specifications-item">
+                  <span>ожидание</span>
+                  <div>30 дней</div>
+                </div>      
+                <div class="block-specifications-item">
+                  <span>помощь</span>
+                  <div>24/7</div>
+                </div>
+              </div>      
+              <div class="block block-characteristic">      
+                <div class="block-characteristic-item">
+                  <div class="block-characteristic-title">
+                    <span>Клиентов:</span>
+                    <span>50 000</span>
+                  </div>
+                </div>      
+                <div class="block-characteristic-item">
+                  <div class="block-characteristic-title">
+                    <span>Город</span>
+                    <span>Москва</span>
+                  </div>
+                </div>      
+                <div class="block-characteristic-item">
+                  <div class="block-characteristic-title">
+                    <span>Бонусы</span>
+                    <span>Игрушки</span>
+                  </div>
+                </div>      
+                <div class="block-characteristic-item">
+                  <div class="block-characteristic-title">
+                    <span>Начальное предложение</span>
+                    <span>16000 руб, 3 котенка, &#8734; осмотр врача</span>
+                  </div>
+                </div>      
+              </div> 
+            </div> 
+            <button class="btn btn-more">показать больше</button>
+          </div>
+        </section>
+
+        <section class="ratings">
+          <h2 class="section-title">Рейтинги заводчиков</h2>
+          <div class="rating-box">
+            <div class="rating-item-inner">
+              <h3 class="rating-title country-title">Страна</h3>
+              <ul class="rating-list country-list">
+                <li class="rating-item country-item"><a href="#">Россия</a></li>
+                <li class="rating-item country-item"><a href="#">Беларусь</a></li>
+                <li class="rating-item country-item"><a href="#">Украина</a></li>
+                <li class="rating-item country-item"><a href="#">Казахстан</a></li>
+                <li class="rating-item country-item"><a href="#">Европа</a></li>
+                <li class="rating-item country-item"><a href="#">Германия</a></li>
+                <li class="rating-item country-item"><a href="#">США</a></li>
+                <li class="rating-item country-item"><a href="#">Нидерланды</a></li>
+                <li class="rating-item country-item"><a href="#">Китай</a></li>
+                <li class="rating-item country-item"><a href="#">Финляндия</a></li>
+                <li class="rating-item country-item"><a href="#">Франция</a></li>
+                <li class="rating-item country-item"><a href="#">Кыргызстан</a></li>
+                <li class="rating-item country-item"><a href="#">Индия</a></li>
+                <li class="rating-item country-item"><a href="#">Сингапур</a></li>
+                <li class="rating-item country-item"><a href="#">Япония</a></li>
+                <li class="rating-item country-item"><a href="#">Эстония</a></li>
+                <li class="rating-item country-item"><a href="#">Канада</a></li>
+              </ul>
+            </div>
+            <div class="rating-item-inner">
+              <h3 class="rating-title">Город</h3>
+              <ul class="rating-list">
+                <li class="rating-item"><a href="#">Москва</a></li>
+                <li class="rating-item"><a href="#">Санкт-Петербург</a></li>
+              </ul>
+            </div> 
+
+            <div class="rating-item-inner">
+              <h3 class="rating-title">цена</h3>
+              <ul class="rating-list">
+                <li class="rating-item"><a href="#">Дешевый</a></li>
+                <li class="rating-item"><a href="#">Дорогой</a></li>
+                <li class="rating-item"><a href="#">Премиум</a></li>
+              </ul>  
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        <div class="footer-logo">
+          <a href="#">
+           <img class="footer-logo-img" src="static/logo">
+          </a>
+        </div> 
+        <p>© 2020 какой-то текст</p>  
+      </div>
+      <div class="footer-menu-list">
+        <a class="footer-menu-items" href="#">карта сайта</a>
+        <a class="footer-menu-items" href="#">о проекте</a>
+        <a class="footer-menu-items" href="#">вход для покупателей</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

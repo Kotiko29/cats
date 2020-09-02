@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./static/favicon/site.webmanifest"> -->
+  <title>Webpack Temple</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+
+          <form class="search" action="#">
+            <div class="header-search">
+              <img src="static/search.svg" alt="" class="header-search-icon">
+              <input type="text" class="header-search-field" placeholder="поиск">
+            </div>           
+           </form>
+  
+           <div class="header-logo">
+             <a href="#">
+              <span>Logo</span>
+             </a>
+           </div>   
+  
+           <div class="header-feedback">
+            <a href="#" class="btn header-feedback-btn">Обратная связь</a>
+           </div>
+        </div>
+        <div class="header-bottom">
+          <div class="header-menu-list">
+            <a class="header-menu-items" href="#">каталог</a>
+            <a class="header-menu-items" href="#">рейтинг</a>
+            <a class="header-menu-items" href="#">Рейтинг</a>
+          </div>
+        </div> 
+      </div>      
+    </header>
+
+    <div class="main-content">
+      <div class="container">
+        <h1 class="title">Обзоры заводчика Golden children</h1>
+
+        <div class="card">
+
+          <div class="block block-main">
+            <div class="block_position">
+                <img src="static/cards/gold-crown.png" alt="crown">
+                <span>1</span>
+            </div>
+            <div class="block_title">
+              <img src="static/logo/06_5d37.jpg" alt="">
+              <a class="btn" href="post.html">к заводчику</a>
+            </div>
+            <div class="block_info">
+              <div class="block_info-rating">5.0</div>
+              <div>
+                <span class="block_info-country">Россия, с 2010 г.</span>
+                <span class="block_info-site">pitomnic.com</span>
+              </div>
+              <div class="block_info-feedback">Отзывы (40)</div>
+            </div>
+          </div>
+  
+          <div class="block block-progress">
+  
+            <div class="block-progress-item">
+              <div class="block-progress-title">Цена</div>
+              <div class="progress-bar">
+                <div class="bar"></div>
+              </div>
+            </div>
+  
+            <div class="block-progress-item">
+              <div class="block-progress-title">родословная</div>
+              <div class="progress-bar">
+                <div class="bar"></div>
+              </div>
+            </div>
+  
+            <div class="block-progress-item">
+              <div class="block-progress-title">гарантия</div>
+              <div class="progress-bar">
+                <div class="bar"></div>
+              </div>
+            </div>
+  
+            <div class="block-progress-item">
+              <div class="block-progress-title">еще</div>
+              <div class="progress-bar">
+                <div class="bar"></div>
+              </div>
+            </div>
+  
+          </div>
+  
+           <div class="block block-specifications">
+            <div class="block-specifications-item">
+              <span>Бесплатный паспорт</span>
+              <div id="ansYes">
+                <img src="static/icons/CheckMark.svg" alt="Да">
+                Да</div>
+            </div>
+  
+            <div class="block-specifications-item">
+              <div class="block-specifications-title">
+                <span>Бесплатная доставка</span>
+                <div id="ansNo">
+                  <img src="static/icons/CrossMark.svg" alt="Нет">
+                  Нет</div>
+              </div>
+            </div>
+  
+            <div class="block-specifications-item">
+              <span>ожидание</span>
+              <div>30 дней</div>
+            </div>
+  
+            <div class="block-specifications-item">
+              <span>помощь</span>
+              <div>24/7</div>
+            </div>
+          </div>
+  
+          <div class="block block-characteristic">
+  
+            <div class="block-characteristic-item">
+              <div class="block-characteristic-title">
+                <span>Клиентов:</span>
+                <span>50 000</span>
+              </div>
+            </div>
+  
+            <div class="block-characteristic-item">
+              <div class="block-characteristic-title">
+                <span>город</span>
+                <span>Москва</span>
+              </div>
+            </div>
+  
+            <div class="block-characteristic-item">
+              <div class="block-characteristic-title">
+                <span>бонусы</span>
+                <span>игрушки</span>
+              </div>
+            </div>
+  
+            <div class="block-characteristic-item">
+              <div class="block-characteristic-title">
+                <span>Начальное предложение</span>
+                <span>16000 руб, 3 котенка, &#8734; осмотр врача</span>
+              </div>
+            </div>      
+          </div> 
+        </div>
+
+        <div class="anchors">
+          <a href="#expert-review">Обзор</a>
+          <a href="#tariff">стоимость</a>
+          <a href="#contacts">Контакты</a>
+          <a href="#reviews">Отзывы</a>
+        </div>
+
+        <section class="expert-review">
+          <h2 class="section-title" id="expert-review">Обзоры от экспертов</h2>
+          <div class="expert-review-wrap">
+            <div>
+              <h3>О питомнике</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sed nulla, nobis velit perferendis aut, ad similique sapiente repellendus magni necessitatibus et ipsa nihil expedita dolorem voluptatibus ea totam distinctio.
+                Sit atque, placeat deleniti perferendis eaque minus pariatur obcaecati, veritatis consectetur recusandae fugit laudantium voluptates illo mollitia ab voluptatem sequi explicabo qui libero minima dolore iusto molestias est. Fugit, adipisci!
+                Sequi, eaque, quidem soluta saepe blanditiis dolores modi, vero a rerum quaerat facere molestiae. Dignissimos, eum amet nemo magnam voluptate consequatur praesentium porro blanditiis soluta modi rem at hic fuga?
+              </p>
+            </div>
+            <div>
+              <h3>Предложение</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis illum nam, vel eveniet atque cum aliquam temporibus! Optio harum velit non! Quod quasi autem nemo nobis provident quis eos cupiditate.Error laborum dolorem in corporis sit, reprehenderit quas optio esse, dolor recusandae velit, repellendus dolore culpa nam at. Officia aperiam labore voluptas veniam reiciendis. Illo sapiente porro dolorem dolor odio.
+              </p>
+            </div>
+            <div>
+              <h3>Бонусы</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem neque ea est rem natus nesciunt, dolores voluptates suscipit doloremque. Recusandae sed nam hic neque? Doloribus esse cupiditate aliquam omnis quibusdam!Dolores doloremque, nemo dignissimos dolore itaque quas possimus aliquam suscipit, laudantium iste maiores nostrum rerum expedita quae consequuntur. Officia temporibus culpa amet fuga veniam repellendus dicta dolor voluptatum qui non!
+              </p>
+            </div>
+            <div>
+              <h3>Еще какой-то параметр</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus debitis nemo ea recusandae, rem nisi mollitia architecto iusto a fugiat quam quod minima magni, dolorum saepe tenetur ab corporis sint.
+              Quasi ut eveniet tenetur totam nostrum? Quibusdam quasi non corrupti perspiciatis ea excepturi maiores expedita facere pariatur. Magni blanditiis aperiam, enim nemo corporis modi, facilis, nihil suscipit expedita sequi doloribus.
+              Neque, dolor eius quisquam sapiente ex dolores, porro molestias, obcaecati est nam deserunt nemo placeat quae explicabo? Necessitatibus aut vel sit eveniet odit ut, sint architecto totam veritatis. Sint, vitae?</p>
+            </div>
+            <div>
+              <h3>Еще какой-то параметр</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus debitis nemo ea recusandae, rem nisi mollitia architecto iusto a fugiat quam quod minima magni, dolorum saepe tenetur ab corporis sint.
+                Quasi ut eveniet tenetur totam nostrum? Quibusdam quasi non corrupti perspiciatis ea excepturi maiores expedita facere pariatur. Magni blanditiis aperiam, enim nemo corporis modi, facilis, nihil suscipit expedita sequi doloribus.
+                Neque, dolor eius quisquam sapiente ex dolores, porro molestias, obcaecati est nam deserunt nemo placeat quae explicabo? Necessitatibus aut vel sit eveniet odit ut, sint architecto totam veritatis. Sint, vitae?</p>
+            </div>
+          </div>  
+        </section>
+
+        <section class="contacts" id="contacts">
+          <h2 class="section-title">Контакты</h2>
+          <div class="contacts-info-list">
+            <div class="contacts-info-item contacts-info-tel">
+              <div><img src="static/icons/tel.png" alt="tel"></div>
+              <div>телефон</div>
+              <div>9894654654564</div>
+            </div>
+            <div class="contacts-info-item contacts-info-address">
+              <div><img src="/static/icons/map.png" alt="map"></div>
+              <div>адрес</div>
+              <div>Lenina, bld. 23, appt. 78</div>
+            </div>
+            <div class="contacts-info-item contacts-info-email">
+              <div><img src="/static/icons/envelope.png" alt="envelope"></div>
+              <div>эл. почта</div>
+              <div>director@cats.ru</div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="feedback">
+          <h2 class="section-title">Оставить отзыв</h2>
+          <form class="feedback-form" name="order-form" method="POST" action="#">
+            <div class="feedback-form-group form-user">
+              <div class="feedback-form-group-item"> 
+                <label for="name">Имя</label>
+                <input id="name" type="text" name="name" class = "name field">
+              </div>
+              <div class="feedback-form-group-item form-website">
+                <label for="website">Сайт</label>
+                <input id="website" type="url" name="website" class= "website field">
+              </div>
+              <div class="feedback-form-group-item">
+                <label for="email">Эл. почта</label>
+                <input id="email" type="email" name="email" class="email field">
+              </div>
+            </div>
+            <label>Отзыв</label>       
+            <div class="feedback-form-group form-comment">
+              <div class="feedback-form-group">
+                <textarea id="comment" rows="5" cols="70" name="comment" class="comment field" placeholder="Максимум 1000 символов" maxlength="1000"></textarea>
+              </div>
+              <div class="feedback-form-group ">
+                <div class="star-rating-wrapper">
+                  <div class="star-rating-wrap">
+                    <div class="text-wrap">Цена</div>
+                    <div class="star-rating" data-total-value="0">
+                      <div class="star-rating-item" data-item-value="5">★</div>
+                      <div class="star-rating-item" data-item-value="4">★</div>
+                      <div class="star-rating-item" data-item-value="3">★</div>
+                      <div class="star-rating-item" data-item-value="2">★</div>
+                      <div class="star-rating-item" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="star-rating-wrap">
+                    <div class="text-wrap">родословная</div>
+                    <div class="star-rating" data-total-value="0">
+                      <div class="star-rating-item" data-item-value="5">★</div>
+                      <div class="star-rating-item" data-item-value="4">★</div>
+                      <div class="star-rating-item" data-item-value="3">★</div>
+                      <div class="star-rating-item" data-item-value="2">★</div>
+                      <div class="star-rating-item" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="star-rating-wrap">
+                    <div class="text-wrap">гарантия</div>
+                    <div class="star-rating" data-total-value="0">
+                      <div class="star-rating-item" data-item-value="5">★</div>
+                      <div class="star-rating-item" data-item-value="4">★</div>
+                      <div class="star-rating-item" data-item-value="3">★</div>
+                      <div class="star-rating-item" data-item-value="2">★</div>
+                      <div class="star-rating-item" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="star-rating-wrap">
+                    <div class="text-wrap">ещё</div>
+                    <div class="star-rating" data-total-value="0">
+                      <div class="star-rating-item" data-item-value="5">★</div>
+                      <div class="star-rating-item" data-item-value="4">★</div>
+                      <div class="star-rating-item" data-item-value="3">★</div>
+                      <div class="star-rating-item" data-item-value="2">★</div>
+                      <div class="star-rating-item" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>   
+              
+              <div class="feedback-form-group form-user-reactions">
+                <div class="feedback-form-group-item assessment">
+                  <div class="feedback-input-group">
+                    <label for="plus">Плюсы</label>
+                    <img class="plus" src="static/icons/plus.png" alt="plus">
+                    <input id="plus" type="text" name="plus" class = "name field" placeholder="Максимум 100 символов" maxlength="100">
+                  </div>
+                  <div class="feedback-input-group">
+                    <label for="minus">Минусы</label>
+                    <img class="minus" src="static/icons/minus.png" alt="minus">
+                    <input id="minus" type="text" name="minus" class = "name field" placeholder="Максимум 100 символов" maxlength="100">
+                  </div>                 
+                </div>
+                <div class="feedback-form-group-item recommendation">
+                  <div class="feedback-input-group radio">
+                    <input class="radio-input" id="thumbDown" type="radio" name="rec">
+                    <label>
+                      <img src="static/icons/thumbDown.png" alt="thumbDown">
+                      Не рекомендую
+                    </label>
+                  </div>  
+                  <div class="feedback-input-group radio">
+                    <input class="radio-input" id="thumbUp" type="radio" name="rec">
+                    <label>
+                      <img src="static/icons/thumbsUp.svg" alt="thumbsUp">
+                      Рекомендую
+                    </label>
+                  </div>
+                </div>            
+              </div>
+            <div>
+              <button id="feedback-form-send" class="btn feedback-form-btn" type="submit" value="ok">Отправить</button>
+            </div>
+          </form>
+        </section>
+    
+        <section class="reviews" id="reviews">
+          <h2 class="section-title">Отзывы о заводчиках</h2>
+          <div class="review">
+            <div class="review-body">
+              <div class="review-body-top">
+                <div class="review-body-rating">4.9</div>
+                <span class="review-body-name">Олег</span>
+                <span class="review-body-date">15.02.2020</span>
+                <a class="review-body-site" href="#">http://многокошек.ru/</a>
+              </div>
+              <div class="review-body-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus nihil dolore ab magnam ducimus a dolores! Libero quaerat iste aliquid incidunt, quas hic quos minima provident explicabo ratione itaque?</p>
+              </div>
+              <div class="review-body-bottom">
+                <div class="review-body-plus">
+                  <img src="static/icons/plus.png" alt="plus">
+                  <span>породистые кошки</span>
+                </div>
+                <div class="review-body-minus">
+                  <img src="static/icons/minus.png" alt="minus">
+                  <span>цена</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-rating">
+              <div class="review-rating-rec">
+                <img src="static/icons/thumbsUp.png" alt="">
+                <span>Рекомендую</span>
+              </div>
+              <div class="block block-progress">
+      
+                <div class="block-progress-item">
+                  <div class="block-progress-title">Цена</div>
+                  <div class="progress-bar">
+                    <div class="bar"></div>
+                  </div>
+                </div>
+      
+                <div class="block-progress-item">
+                  <div class="block-progress-title">родословная</div>
+                  <div class="progress-bar">
+                    <div class="bar"></div>
+                  </div>
+                </div>
+      
+                <div class="block-progress-item">
+                  <div class="block-progress-title">гарантия</div>
+                  <div class="progress-bar">
+                    <div class="bar"></div>
+                  </div>
+                </div>
+      
+                <div class="block-progress-item">
+                  <div class="block-progress-title">ещё</div>
+                  <div class="progress-bar">
+                    <div class="bar"></div>
+                  </div>
+                </div>
+      
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+            </div>
+          </div> 
+        </section>   
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        <div class="footer-logo">
+          <a href="#">
+           <img class="footer-logo-img" src="static/logo">
+          </a>
+        </div> 
+        <p>© 2020 какой-то текст</p>  
+      </div>
+      <div class="footer-menu-list">
+        <a class="footer-menu-items" href="#">карта сайта</a>
+        <a class="footer-menu-items" href="#">о проекте</a>
+        <a class="footer-menu-items" href="#">вход для покупателей</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
